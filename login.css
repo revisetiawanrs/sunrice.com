@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 80px; /* Sesuaikan tinggi maksimum logo */
+    width: auto; /* Membiarkan lebar menyesuaikan secara proporsional */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #272624dc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+.left-section .logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-section .motto h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.left-section .motto p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 360px;
+    padding: 50px;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 22px;
+    color: #333;
+    text-align: left;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    background: #1877f2;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #166fe5;
+}
+
+.forgot {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.forgot a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.btn-register {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #42b72a;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-register:hover {
+    background: #36a420;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}

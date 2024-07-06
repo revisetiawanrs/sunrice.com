@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 80px !important; /* Sesuaikan ukuran ini sesuai kebutuhan Anda */
+    width: auto !important; /* Menjaga proporsi gambar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.banner {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    height: 1000px; /* Adjust the height of the banner here */
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust object-fit to contain to avoid cropping */
+    display: none;
+}
+
+.slides img:first-child {
+    display: block;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+.ratings {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.rating {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.rating img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.rating .name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rating span {
+    color: gold;
+    margin-left: auto;
+}

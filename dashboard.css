@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f0f2f5;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-section a {
+    display: block;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.profile-section a:hover {
+    text-decoration: underline;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: auto;
+    border-bottom: 1px solid #555; /* Garis pemisah antara menu */
+    margin-top: 20px;
+}
+
+.sidebar nav ul li:last-child {
+    margin-bottom: 0; /* Menghilangkan margin bawah di menu terakhir */
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Padding pada setiap sisi menu */
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgb(35, 34, 34);
+    border-radius: 1px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    height: 400px; /* Adjust the height of the banner here */
+    border-radius: 10px;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust object-fit to contain to avoid cropping */
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicators span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicators span.active {
+    background-color: #333;
+}
+
+.why-choose-us {
+    background-color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-choose-us h2 {
+    margin-bottom: 20px;
+    font-style: oblique;
+    color: rgb(225, 255, 0);
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reason {
+    text-align: center;
+}
+
+.reason img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.company-info {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: justify;
+}
+
+.company-info h2 {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info .material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+}

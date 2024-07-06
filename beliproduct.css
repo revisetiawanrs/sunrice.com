@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: rgb(241, 233, 233);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 80px !important; /* Sesuaikan ukuran ini sesuai kebutuhan Anda */
+    width: auto !important; /* Menjaga proporsi gambar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    margin-top: 10px;
+}
+
+.card .nama {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .harga {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-keranjang, .btn-beli {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-keranjang {
+    background-color: #f0a500;
+    border: none;
+}
+
+.btn-beli {
+    background-color: #1877f2;
+    border: none;
+}
+
+.btn-keranjang:hover, .btn-beli:hover {
+    opacity: 0.8;
+}
